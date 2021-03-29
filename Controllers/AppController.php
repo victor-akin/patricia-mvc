@@ -49,6 +49,8 @@ class AppController
     
     private function _getController($controller)
     {
+        if($controller === 'api') return new APIController();
+
         $controller = ($controller == "") ? "Home" : ucfirst($controller); // default to HomeController
         $controller_file = __DIR__.'\\'.$controller."Controller.php";
         $controller_file = str_replace('\\', DIRECTORY_SEPARATOR, $controller_file);

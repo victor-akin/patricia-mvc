@@ -4,7 +4,7 @@ In current directory open terminal and run
 Replace values in `config.ini`
 
 After creating the db you can run  
-`php make-db.php`
+`php make-tables.php`
 
 All requests to have the format url `domain://controller/handler/other/params`  
 The `controller` maps to a controller class
